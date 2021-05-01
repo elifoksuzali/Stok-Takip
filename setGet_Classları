@@ -1,0 +1,38 @@
+
+package SetGetClass;
+
+public class Kategori {
+     private int kategori_id;
+     private String kategori_adı;
+     private int AltKategori_id;// mesela spor ürünü seçtiğimizde spor ürünün alt kategeoris nedir
+     // gündelik spor koşu basketbol gibi branşlar girdiği için alt kategorisi olmadır 
+
+    public int getKategori_id() {
+        return kategori_id;
+    }
+
+    public void setKategori_id(int kategori_id) {
+        this.kategori_id = kategori_id;
+    }
+
+    public String getKategori_adı() {
+        return kategori_adı;
+    }
+
+    public void setKategori_adı(String kategori_adı) {
+        this.kategori_adı = kategori_adı;
+    }
+
+    public int getAltKategori_id() {
+        return AltKategori_id;
+    }
+
+    public void setAltKategori_id(int AltKategori_id) {
+        this.AltKategori_id = AltKategori_id;
+    }
+     public String toString(){
+       return kategori_id +" " +kategori_adı+""+AltKategori_id; 
+       
+    }
+
+}
